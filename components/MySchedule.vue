@@ -19,7 +19,7 @@
     props: {
       schedule: {
         type: Array,
-        default: [
+        default: () => [
           { id: 0, day: 'Sun', items: [] },
           { id: 1, day: 'Mon', items: [] },
           { id: 2, day: 'Tue', items: [] },
@@ -27,8 +27,8 @@
           { id: 4, day: 'Thu', items: [] },
           { id: 5, day: 'Fri', items: [] },
           { id: 6, day: 'Sat', items: [] },
-        ]
-      },
+        ],
+      }
     },
 
     methods: {
